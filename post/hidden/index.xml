@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hidden folder on My Site Title</title>
+    <link>https://dennislblog.github.io/post/hidden/</link>
+    <description>Recent content in hidden folder on My Site Title</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dennislblog.github.io/post/hidden/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>深度学习</title>
+      <link>https://dennislblog.github.io/2020/08/20_08_04-interview/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennislblog.github.io/2020/08/20_08_04-interview/</guid>
+      <description>&lt;p&gt;see 2020/08/20_08_04-interview/index.html&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

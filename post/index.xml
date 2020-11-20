@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on My Site Title</title>
+    <link>https://dennislblog.github.io/post/</link>
+    <description>Recent content in Blog on My Site Title</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dennislblog.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning High Frequency Trading in Market Microstructure Study</title>
+      <link>https://dennislblog.github.io/2020/07/20_07_20-market-hft/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennislblog.github.io/2020/07/20_07_20-market-hft/</guid>
+      <description>&lt;p&gt;some notes from two high frequency textbooks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Review of Competing Market Makers</title>
+      <link>https://dennislblog.github.io/2020/06/20_06_30-imperfect-competition/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennislblog.github.io/2020/06/20_06_30-imperfect-competition/</guid>
+      <description>&lt;p&gt;To better understand market player&amp;rsquo;s equilibrium responses in a perfect competitive marketplace, we take our look at how the imperfect competition among finite many market makers drives the dynamics of price discovery. In this post, I will review two papers: one that investigates price competition among $M$ market makers (Bondarenko, 2001) and another where $M$ liquidity providers submit their demand price schedule (i.e., quantities) based on a common clearing price (Nishide, 2006). Through reviewing these works, I hope to gain insight on how imperfect competition among market makers (or liquidity providers) affects the price formation and price discovery during the trading periods.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Review of Market Microstructure Studies</title>
+      <link>https://dennislblog.github.io/2020/06/20_06_29-model-review/</link>
+      <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennislblog.github.io/2020/06/20_06_29-model-review/</guid>
+      <description>&lt;p&gt;Although market microstructure models have been proposed for over thirty years, only a few studies on how market makers and informed traders interact to form a competitive price (Cho, 2004). In this blog, I will review several market microstructure models with detailed analysis.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python Unittest File Structure</title>
+      <link>https://dennislblog.github.io/2020/04/test_unit/</link>
+      <pubDate>Fri, 24 Apr 2020 15:39:19 +0800</pubDate>
+      
+      <guid>https://dennislblog.github.io/2020/04/test_unit/</guid>
+      <description>&lt;p&gt;The best solution in my opinion is to use the &lt;code&gt;unittest&lt;/code&gt; [command line interface]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; which will add the directory to the &lt;code&gt;sys.path&lt;/code&gt; so you don&amp;rsquo;t have to (done in the &lt;code&gt;TestLoader&lt;/code&gt; class).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Inverse Reinforcement Learning</title>
+      <link>https://dennislblog.github.io/2020/04/inverse-reinforcement-learning/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennislblog.github.io/2020/04/inverse-reinforcement-learning/</guid>
+      <description>Introduction In this post, I will review most cited approaches in the field of inverse reinforcement learning (and imitation learning) that are pertain to my dissertation. We have two main interests:
+ To explain agent&amp;rsquo;s behavior through describing its reward structure and explore the relationship between the informed trading intensities and the reward function (e.g., when informed trading is more likely to occur, the magnitude of price change might be less important than the order imbalance).</description>
+    </item>
+    
+    <item>
+      <title>Cupper Shortcodes</title>
+      <link>https://dennislblog.github.io/2019/02/cupper-shortcodes/</link>
+      <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>
+      
+      <guid>https://dennislblog.github.io/2019/02/cupper-shortcodes/</guid>
+      <description>blockquote {{&amp;lt; blockquote author=&amp;quot;Carl Jung&amp;quot; &amp;gt;}} Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness. It is far better to take things as they come along with patience and equanimity. {{&amp;lt; /blockquote &amp;gt;}} Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness.</description>
+    </item>
+    
+  </channel>
+</rss>

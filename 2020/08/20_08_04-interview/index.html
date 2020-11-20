@@ -1,0 +1,650 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    <title>深度学习 - My Site Title</title>
+    <meta name="keywords" content="">
+    
+    <meta property="og:title" content="深度学习">
+    <meta property="og:site_name" content="My Site Title">
+    <meta property="og:image" content="/img/author.jpg"> 
+    <meta name="title" content="深度学习 - My Site Title" />
+    <meta name="description" content="My description"> 
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon.png" />
+    <link href="/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://toert.github.io/Isolated-Bootstrap/versions/4.0.0-beta/iso_bootstrap4.0.0min.css">
+    <link rel="stylesheet" type="text/css" href="/hugo-cite.css" />
+    <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+     fancybox: true, 
+    motion: true
+  };
+</script>
+</head>
+<svg style="display: none">
+  <symbol id="bookmark" viewBox="0 0 40 50">
+   <g transform="translate(2266 3206.2)">
+    <path style="stroke:currentColor;stroke-width:3.2637;fill:none" d="m-2262.2-3203.4-.2331 42.195 16.319-16.318 16.318 16.318.2331-42.428z"/>
+   </g>
+  </symbol>
+
+  <symbol id="w3c" viewBox="0 0 127.09899 67.763">
+   <text font-size="83" style="font-size:83px;font-family:Trebuchet;letter-spacing:-12;fill-opacity:0" letter-spacing="-12" y="67.609352" x="-26.782778">W3C</text>
+   <text font-size="83" style="font-size:83px;font-weight:bold;font-family:Trebuchet;fill-opacity:0" y="67.609352" x="153.21722" font-weight="bold">SVG</text>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m33.695.377 12.062 41.016 12.067-41.016h8.731l-19.968 67.386h-.831l-12.48-41.759-12.479 41.759h-.832l-19.965-67.386h8.736l12.061 41.016 8.154-27.618-3.993-13.397h8.737z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m91.355 46.132c0 6.104-1.624 11.234-4.862 15.394-3.248 4.158-7.45 6.237-12.607 6.237-3.882 0-7.263-1.238-10.148-3.702-2.885-2.47-5.02-5.812-6.406-10.022l6.82-2.829c1.001 2.552 2.317 4.562 3.953 6.028 1.636 1.469 3.56 2.207 5.781 2.207 2.329 0 4.3-1.306 5.909-3.911 1.609-2.606 2.411-5.738 2.411-9.401 0-4.049-.861-7.179-2.582-9.399-1.995-2.604-5.129-3.912-9.397-3.912h-3.327v-3.991l11.646-20.133h-14.062l-3.911 6.655h-2.493v-14.976h32.441v4.075l-12.31 21.217c4.324 1.385 7.596 3.911 9.815 7.571 2.22 3.659 3.329 7.953 3.329 12.892z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.21 0 1.414 8.6-5.008 9.583s-1.924-4.064-5.117-6.314c-2.693-1.899-4.447-2.309-7.186-1.746-3.527.73-7.516 4.938-9.258 10.13-2.084 6.21-2.104 9.218-2.178 11.978-.115 4.428.58 7.043.58 7.043s-3.04-5.626-3.011-13.866c.018-5.882.947-11.218 3.666-16.479 2.404-4.627 5.954-7.404 9.114-7.728 3.264-.343 5.848 1.229 7.841 2.938 2.089 1.788 4.213 5.698 4.213 5.698l4.94-9.837z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.82 48.674s-2.208 3.957-3.589 5.48c-1.379 1.524-3.849 4.209-6.896 5.555-3.049 1.343-4.646 1.598-7.661 1.306-3.01-.29-5.807-2.032-6.786-2.764-.979-.722-3.486-2.864-4.897-4.854-1.42-2-3.634-5.995-3.634-5.995s1.233 4.001 2.007 5.699c.442.977 1.81 3.965 3.749 6.572 1.805 2.425 5.315 6.604 10.652 7.545 5.336.945 9.002-1.449 9.907-2.031.907-.578 2.819-2.178 4.032-3.475 1.264-1.351 2.459-3.079 3.116-4.108.487-.758 1.276-2.286 1.276-2.286l-1.276-6.644z"/>
+  </symbol>
+
+  <symbol id="tag" viewBox="0 0 177.16535 177.16535">
+    <g transform="translate(0 -875.2)">
+     <path style="fill-rule:evenodd;stroke-width:0;fill:currentColor" d="m159.9 894.3-68.79 8.5872-75.42 77.336 61.931 60.397 75.429-76.565 6.8495-69.755zm-31.412 31.835a10.813 10.813 0 0 1 1.8443 2.247 10.813 10.813 0 0 1 -3.5174 14.872l-.0445.0275a10.813 10.813 0 0 1 -14.86 -3.5714 10.813 10.813 0 0 1 3.5563 -14.863 10.813 10.813 0 0 1 13.022 1.2884z"/>
+    </g>
+  </symbol>
+
+  <symbol id="balloon" viewBox="0 0 141.73228 177.16535">
+   <g transform="translate(0 -875.2)">
+    <g>
+     <path style="fill:currentColor" d="m68.156 882.83-.88753 1.4269c-4.9564 7.9666-6.3764 17.321-5.6731 37.378.36584 10.437 1.1246 23.51 1.6874 29.062.38895 3.8372 3.8278 32.454 4.6105 38.459 4.6694-.24176 9.2946.2879 14.377 1.481 1.2359-3.2937 5.2496-13.088 8.886-21.623 6.249-14.668 8.4128-21.264 10.253-31.252 1.2464-6.7626 1.6341-12.156 1.4204-19.764-.36325-12.93-2.1234-19.487-6.9377-25.843-2.0833-2.7507-6.9865-7.6112-7.9127-7.8436-.79716-.20019-6.6946-1.0922-6.7755-1.0248-.02213.0182-5.0006-.41858-7.5248-.22808l-2.149-.22808h-3.3738z"/>
+     <path style="fill:currentColor" d="m61.915 883.28-3.2484.4497c-1.7863.24724-3.5182.53481-3.8494.63994-2.4751.33811-4.7267.86957-6.7777 1.5696-.28598 0-1.0254.20146-2.3695.58589-5.0418 1.4418-6.6374 2.2604-8.2567 4.2364-6.281 7.6657-11.457 18.43-12.932 26.891-1.4667 8.4111.71353 22.583 5.0764 32.996 3.8064 9.0852 13.569 25.149 22.801 37.517 1.3741 1.841 2.1708 2.9286 2.4712 3.5792 3.5437-1.1699 6.8496-1.9336 10.082-2.3263-1.3569-5.7831-4.6968-21.86-6.8361-33.002-.92884-4.8368-2.4692-14.322-3.2452-19.991-.68557-5.0083-.77707-6.9534-.74159-15.791.04316-10.803.41822-16.162 1.5026-21.503 1.4593-5.9026 3.3494-11.077 6.3247-15.852z"/>
+     <path style="fill:currentColor" d="m94.499 885.78c-.10214-.0109-.13691 0-.0907.0409.16033.13489 1.329 1.0675 2.5976 2.0723 6.7003 5.307 11.273 14.568 12.658 25.638.52519 4.1949.24765 14.361-.5059 18.523-2.4775 13.684-9.7807 32.345-20.944 53.519l-3.0559 5.7971c2.8082.76579 5.7915 1.727 8.9926 2.8441 11.562-11.691 18.349-19.678 24.129-28.394 7.8992-11.913 11.132-20.234 12.24-31.518.98442-10.02-1.5579-20.876-6.7799-28.959-.2758-.4269-.57803-.86856-.89617-1.3166-3.247-6.13-9.752-12.053-21.264-16.131-2.3687-.86369-6.3657-2.0433-7.0802-2.1166z"/>
+     <path style="fill:currentColor" d="m32.52 892.22c-.20090-.13016-1.4606.81389-3.9132 2.7457-11.486 9.0476-17.632 24.186-16.078 39.61.79699 7.9138 2.4066 13.505 5.9184 20.562 5.8577 11.77 14.749 23.219 30.087 38.74.05838.059.12188.1244.18052.1838 1.3166-.5556 2.5965-1.0618 3.8429-1.5199-.66408-.32448-1.4608-1.3297-3.8116-4.4602-5.0951-6.785-8.7512-11.962-13.051-18.486-5.1379-7.7948-5.0097-7.5894-8.0586-13.054-6.2097-11.13-8.2674-17.725-8.6014-27.563-.21552-6.3494.13041-9.2733 1.775-14.987 2.1832-7.5849 3.9273-10.986 9.2693-18.07 1.7839-2.3656 2.6418-3.57 2.4409-3.7003z"/>
+     <path style="fill:currentColor" d="m69.133 992.37c-6.2405.0309-12.635.76718-19.554 2.5706 4.6956 4.7759 9.935 10.258 12.05 12.625l4.1272 4.6202h11.493l3.964-4.4516c2.0962-2.3541 7.4804-7.9845 12.201-12.768-8.378-1.4975-16.207-2.6353-24.281-2.5955z"/>
+     <rect style="stroke-width:0;fill:currentColor" ry="2.0328" height="27.746" width="22.766" y="1017.7" x="60.201"/>
+    </g>
+   </g>
+  </symbol>
+
+  <symbol id="info" viewBox="0 0 41.667 41.667">
+   <g transform="translate(-37.035 -1004.6)">
+    <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m76.25 1030.2a18.968 18.968 0 0 1 -23.037 13.709 18.968 18.968 0 0 1 -13.738 -23.019 18.968 18.968 0 0 1 23.001 -13.768 18.968 18.968 0 0 1 13.798 22.984"/>
+    <g transform="matrix(1.1146 0 0 1.1146 -26.276 -124.92)">
+     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m75.491 1039.5v-8.7472"/>
+     <path style="stroke-width:0;fill:currentColor" transform="scale(-1)" d="m-73.193-1024.5a2.3719 2.3719 0 0 1 -2.8807 1.7142 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
+    </g>
+   </g>
+  </symbol>
+
+  <symbol id="warning" viewBox="0 0 48.430474 41.646302">
+    <g transform="translate(-1.1273 -1010.2)">
+     <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:4.151;fill:none" d="m25.343 1012.3-22.14 37.496h44.28z"/>
+     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:4.1512;fill:none" d="m25.54 1027.7v8.7472"/>
+     <path style="stroke-width:0;fill:currentColor" d="m27.839 1042.8a2.3719 2.3719 0 0 1 -2.8807 1.7143 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
+    </g>
+  </symbol>
+
+  <symbol id="menu" viewBox="0 0 50 50">
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="0" x="0"/>
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="20" x="0"/>
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="40" x="0"/>
+   </symbol>
+
+   <symbol id="link" viewBox="0 0 50 50">
+    <g transform="translate(0 -1002.4)">
+     <g transform="matrix(.095670 0 0 .095670 2.3233 1004.9)">
+      <g>
+       <path style="stroke-width:0;fill:currentColor" d="m452.84 192.9-128.65 128.65c-35.535 35.54-93.108 35.54-128.65 0l-42.881-42.886 42.881-42.876 42.884 42.876c11.845 11.822 31.064 11.846 42.886 0l128.64-128.64c11.816-11.831 11.816-31.066 0-42.9l-42.881-42.881c-11.822-11.814-31.064-11.814-42.887 0l-45.928 45.936c-21.292-12.531-45.491-17.905-69.449-16.291l72.501-72.526c35.535-35.521 93.136-35.521 128.64 0l42.886 42.881c35.535 35.523 35.535 93.141-.001 128.66zm-254.28 168.51-45.903 45.9c-11.845 11.846-31.064 11.817-42.881 0l-42.884-42.881c-11.845-11.821-11.845-31.041 0-42.886l128.65-128.65c11.819-11.814 31.069-11.814 42.884 0l42.886 42.886 42.876-42.886-42.876-42.881c-35.54-35.521-93.113-35.521-128.65 0l-128.65 128.64c-35.538 35.545-35.538 93.146 0 128.65l42.883 42.882c35.51 35.54 93.11 35.54 128.65 0l72.496-72.499c-23.956 1.597-48.092-3.784-69.474-16.283z"/>
+      </g>
+     </g>
+    </g>
+  </symbol>
+
+  <symbol id="doc" viewBox="0 0 35 45">
+   <g transform="translate(-147.53 -539.83)">
+    <path style="stroke:currentColor;stroke-width:2.4501;fill:none" d="m149.38 542.67v39.194h31.354v-39.194z"/>
+    <g style="stroke-width:25" transform="matrix(.098003 0 0 .098003 133.69 525.96)">
+     <path d="m220 252.36h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+     <path style="stroke:currentColor;stroke-width:25;fill:none" d="m220 409.95h200"/>
+     <path d="m220 488.74h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+     <path d="m220 331.15h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+    </g>
+   </g>
+ </symbol>
+
+ <symbol id="tick" viewBox="0 0 177.16535 177.16535">
+  <g transform="translate(0 -875.2)">
+   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="155" width="40" y="702.99" x="556.82"/>
+   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="40" width="90.404" y="817.99" x="506.42"/>
+  </g>
+ </symbol>
+</svg>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<div class="container one-collumn sidebar-position-left page-home  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-meta  custom-logo ">
+
+  <div class="custom-logo-site-title">
+    <a href="https://dennislblog.github.io/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">My Site Title</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">subtitle here</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+    <ul id="menu" class="menu">
+      
+      
+        <li class="menu-item ">
+          <a href="/post/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-"></i> <br />Blog
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="/tags/" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-"></i> <br />Tags
+          </a>
+        </li>
+      
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger"> <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> Search</a>
+      </li>
+    </ul>
+    <div class="site-search">
+      <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+    </div>
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://dennislblog.github.io/2020/08/20_08_04-interview/" itemprop="url">
+        深度学习
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">Published at:</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="Tuesday, August 4, 2020">
+    Tuesday, August 4, 2020
+</time>
+</span> 
+      
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">Reading:</span>
+<span class="leancloud-visitors-count">3169 words ~7min</span>
+</span>
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    <p>see 2020/08/20_08_04-interview/index.html</p>
+<style>
+.post-body > ul > li{
+    margin:0 0 10px 0;   
+}
+</style>
+<h2 id="模型评估方法">模型评估方法</h2>
+<ul>
+<li>Accuracy作为指标有哪些局限性？
+<ul>
+<li><del>不平衡分类问题</del></li>
+</ul>
+</li>
+<li>ROC和PR曲线是什么？
+<ul>
+<li><del>ROC是<code>false positive rate-- true positive rate</code>曲线，假设二元分类，每个样例对应一个$[0,1]$的概率，根据阈值的不同，输出一组TPR-FPR对应ROC上的一个点；PR不同于ROC的是对正负样本分布敏感</del></li>
+<li><code>FPR=FP/N，TPR=TP/P，TP + FP = P'</code></li>
+<li><code>Precision = TP/P', Recall = TP/P</code> $P'$代表所有预测$P$的数量</li>
+</ul>
+</li>
+<li>为什么AUC比precision要好
+<ul>
+<li>比如一个坏账率，$P$很少，假设一个分类器全部预测成$N$，准确率会很高</li>
+<li>但如果用AUC描述，由于<code>TP</code>和<code>FP</code>都是$0$ ($P'=0$嘛)，而全部预测$P$，则<code>TPR=FPR=1</code>，因此这个分类器的ROC就是连接(0,0)和(1,1)，AUC=$0.5$</li>
+</ul>
+</li>
+<li>如何计算AUC？
+<ul>
+<li><del>由于AUC的定义就是从正负样本中随机抽取一个，正样本概率大于负样本</del></li>
+<li>可以穷举所有正-负样本对（一个正样本与一个负样本），逐一比较他们的概率，如果正大于负，取<code>1</code>，小于取<code>0</code>，等于取<code>0.5</code>，然后相加除以假设全部是1。如果不能穷举则可以通过抽样估算</li>
+</ul>
+</li>
+</ul>
+<h2 id="基本方法">基本方法</h2>
+<ul>
+<li>如何划分训练集？如何选取验证集？
+<ul>
+<li>可以选择交叉验证，特别是数据量小或者不平衡分类问题时，比如我项目里用到的nested cross validation的方法来节省数据量</li>
+</ul>
+</li>
+<li>什么是偏差和方差？
+<ul>
+<li><del>偏差是估计期望和真实期望的差距，而方差是估计的离散性，越大代表模型预测越不稳定</del></li>
+<li><code>mean square error</code> $MSE = \mathbb{E}[(\hat \theta_m - \theta)^2] = \text{Bias}(\hat \theta_m)^2 + Var(\hat \theta_m)$ 所以过度追求训练集上的偏差小，容易导致测试集上偏差大（过拟合）</li>
+</ul>
+</li>
+<li>深度学习解决过拟合的方法有哪些?
+<ul>
+<li>增加训练集，增加数据代表性</li>
+<li>限制模型表达能力，比如 $l_1, l_2$ 正则化</li>
+<li>dropout通过不断随机删除隐藏层神经元的办法，<del>用集合学习的策略来抵消不同神经网络的过拟合</del>（类似于<code>cross validation validation</code>）并且减少了神经元之间的联系和对某一些神经元的过度输出（更加<code>robust</code>，<del>进化是增加适应性，而非依赖某一特定环境</del>）</li>
+<li>另一个减小过拟合的办法是<code>batch normalization</code>，为了解决所谓中间隐藏层数据分布一直随着前一层参数变化而变化的<code>internal covariate shift</code>问题，即对上一层输出先做一个预处理，<del>通过对<code>i</code>层<code>j</code>个数据（1个batch）的<code>normalization</code>实现每一个神经元的输入分布都稳定</del>但是仅仅这样做容易导致数据原本都是正的结果正则化成负的导致在激活层被丢弃，丧失了表达性，因此他引入了两个线性表达式参数将标准数转换到原来的范围？</li>
+<li>提前结束训练，防止过拟合</li>
+<li>集合学习（原因见<code>dropout</code>）</li>
+</ul>
+</li>
+<li>解决欠拟合的方法有哪些？
+<ul>
+<li>增加模型复杂度</li>
+<li>调整模型初始化方式，在参数为$0$或者$1$的地方容易梯度消失，导致整个神经链失去传导能力</li>
+<li>调整学习率，可能学习率太大了</li>
+<li>集合学习</li>
+</ul>
+</li>
+<li>深度模型参数调整的一般方法？
+<ul>
+<li>学习率：小-&gt;大-&gt;小</li>
+<li>初始化参数</li>
+<li>优化器的选择</li>
+<li>损失函数的选择（<code>cross entropy, l2 loss ... </code>）</li>
+<li>可视化</li>
+<li>从小数据大模型入手，先过拟合，再增加数据并根据需要调整模型复杂度</li>
+</ul>
+</li>
+</ul>
+<h2 id="优化方法">优化方法</h2>
+<ul>
+<li>
+<p>常用的优化器有哪些？</p>
+<blockquote>
+<p>一般框架，在每个epoch进行如下</p>
+<blockquote>
+<ol>
+<li>计算目标函数关于当前参数的梯度：$g_t = \nabla f(w_t)$</li>
+<li>根据历史梯度计算一阶动量和二阶动量：$m_t = \phi(g_1, \cdots, g_t), V_t = \Phi(g_1, \cdots, g_t)$</li>
+<li>计算当前时刻的下降梯度: $\eta_t = \alpha(V_t)^{-\frac{1}{2}}m_t$</li>
+<li>根据下降梯度更新 $w_{t+1} = w_t - \eta_t$</li>
+</ol>
+</blockquote>
+</blockquote>
+<ul>
+<li>SGD: 没有考虑历史梯度</li>
+<li>SGD with momentum: $m_t = \beta m_{t-1} + (1-\beta)g_t$</li>
+<li>NAG：牛顿加速$g_t = \nabla f(w_t - \eta_{t-1}) $ 即假设已经更新到了那里</li>
+<li>AdaGrad: 加入二阶动量$V_t = \sum_{t}g_t^2$ 在梯度变化大的时候更新就小一些</li>
+<li>AdaDelta：二阶动量 with momentum: $V_t = \beta V_{t-1} + (1-\beta) g_t^2$</li>
+<li>Adam：把momentum的一阶和二阶全部考虑进来</li>
+<li>NAdam：结合Adam和NAG别，考虑未来时刻，也考虑momentum</li>
+</ul>
+</li>
+<li>
+<p>常用的损失函数有哪些？</p>
+<ul>
+<li>对于分类问题有：<code>log loss</code>$\log(1+\exp(-f\cdot y))$, <code>focal loss</code>, <code>kl divergence entropy loss</code>$-\log((1+f\cdot y)/2)$, <code>exponential loss</code> 和 <code>hinge loss</code>$\max(0, 1-f\cdot y)$</li>
+</ul>
+<p>
+
+
+
+
+<figure role="group">
+    <a href=" https://www.cs.cornell.edu/courses/cs4780/2015fa/web/lecturenotes/pngPic/c4/classificationlosses.png" class="img-link">
+        <img src="https://www.cs.cornell.edu/courses/cs4780/2015fa/web/lecturenotes/pngPic/c4/classificationlosses.png" width=50% title="分类损失，主要看可导性和对异常值的敏感 " >
+    </a>
+</figure></p>
+<ul>
+<li>对于回归问题有：<code>mse</code>$(f-y)^2$, <code>mean absolute error</code>$|f-y|$, <code>huber loss</code>在$|f-y|$小的地方用MSE，在$|f-y|&gt;\delta$的地方，用对异常值不那么敏感的$l_1$loss: $2\delta|f-y|-\delta^2$</li>
+</ul>
+<p>
+
+
+
+
+<figure role="group">
+    <a href=" https://www.cs.cornell.edu/courses/cs4780/2015fa/web/lecturenotes/pngPic/c4/regressionlosses.png" class="img-link">
+        <img src="https://www.cs.cornell.edu/courses/cs4780/2015fa/web/lecturenotes/pngPic/c4/regressionlosses.png" width=50% title="回归损失，主要看可导性和对异常值的敏感 " >
+    </a>
+</figure></p>
+</li>
+<li>
+<p>梯度下降法和牛顿法（拟牛顿法暂略）</p>
+<ul>
+<li>批量梯度下降<code>batch gradient descent</code>使用所有样本，<code>stochastic gradient descent</code>随机选择一个样本求梯度，<code>mini-batch gradient descent</code>是前两者的折中，可以调整</li>
+<li>牛顿法可以求方程的根，根据泰勒近似，$$f(x_{n+1}) = f(x_n) + f&rsquo;(x_n)(x_{n+1} - x_n)$$因为我们希望找到一阶梯度为$0$的参数值：$w&rsquo; = w - \nabla_wf(w)(\text{Hess}_w)^{-1}$ (当学习率为1，梯度下降的公式是$w&rsquo; = w - \nabla_wf(w)$)
+
+
+
+
+
+<figure role="group">
+    <a href=" newton-method.jpg" class="img-link">
+        <img src="newton-method.jpg" width=50% title="牛顿法：不是朝梯度下降最快的方向更新，而是更进一步考虑到了梯度的变化，收敛也是局部的，并且要求可逆的二阶矩阵正定，否则可能朝梯度增大方向更新 " >
+    </a>
+</figure></li>
+</ul>
+</li>
+<li>
+<p>什么是生成模型什么是判别模型？</p>
+<ul>
+<li><del>判别模型是在给出一个手写数字的部分图片信息下，判断这个数字是$0-9$的概率</del></li>
+<li><del>生成模型则更关注联合概率而非条件概率，比如识别这个图和数字分别是$0-9$的联合概率，比如手里有大量这个人的手写数字的笔迹，通过一个生成器来模仿这些笔迹</del>
+
+
+
+
+
+<figure role="group">
+    <a href=" GAN.jpg" class="img-link">
+        <img src="GAN.jpg" width=100% title="生成模型：&lt;del&gt;蓝色虚线&lt;/del&gt;代表判别器分类标准，&lt;del&gt;黑色虚线&lt;/del&gt;代表真实样本分布情况，&lt;del&gt;绿色实线&lt;/del&gt;代表生成样本的分布，$Z$代表随机噪音向量，是生成器的输入 " >
+    </a>
+</figure></li>
+</ul>
+</li>
+<li>
+<p>$l_1$和$l_2$正则分别有什么特点？为何$l_1$稀疏？</p>
+<ul>
+<li><code>p-norm</code>: $\| x\|_p = \left(\sum_i^n |x_i|^p\right)^{\frac{1}{p}}$</li>
+<li>$l_1$损失函数更稳定（异常值处理），但导数不连续，不好求最优解。所以<code>huber</code>损失函数完美结合了$l_1$和$l_2$，使得他既不对异常噪音敏感，也不是一成不变的梯度值，梯度会随着损失的减小而减小，从而不会错过最优点，唯一的问题就是他有一个超参数阈值$\delta$</li>
+</ul>
+</li>
+</ul>
+<h2 id="深度学习基础">深度学习基础</h2>
+<ul>
+<li><code>relu</code>激活层，<code>MSE</code>作为损失函数推导反向传播
+
+
+
+
+
+<figure role="group">
+    <a href=" forward-backward.jpg" class="img-link">
+        <img src="forward-backward.jpg" width=100% title="先通过前向传播把每个值算出来，再通过反向传播计算每一个神经元的梯度：比如最后一个神经元梯度是1.00, 倒数第二个是$\partial \frac{1}{x} |_{x=1.37}\times 1.00 = -0.53$，记住加法分配，乘法加法，最大值继承等" >
+    </a>
+</figure>
+<blockquote>
+<p>相关见<a href="https://blog.csdn.net/u014313009/article/details/51039334">这个例子</a>和<a href="https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/comment-page-1/">这个</a></p>
+</blockquote>
+</li>
+<li><code>dropout</code>如何实现反向传播的
+<ul>
+<li>假设每一个神经元以$p$的概率被丢弃，而没被丢弃的神经元信号放大$(1-p)^{-1}$倍，把这个函数定义为<code>mask</code>。</li>
+<li>假设一个输入向量$x$，经$p$的<code>dropout</code>函数变换后得到向量$d$，在前向传播得到误差为$E$(标量)，则反向传播梯度为 $$\nabla_x E = \nabla_d E \odot \textbf{mask}(\mathbf{x})$$</li>
+</ul>
+</li>
+<li>常用的激活函数，导数？
+<ul>
+<li>sigmoid: $\sigma(x) = (1+e^{-x})^{-1}$, $\partial \sigma(x) = \sigma(x)(1-\sigma(x))$，导数取值范围是$(0,0.25]$，很容易梯度消失</li>
+<li>tanh: $\tanh(x) = (e^x+e^{-x})^{-1}(e^x-e^{-x})$, $\partial \tanh(x) = 1-\tanh^2(x)$，导数取值范围是$[0,1)$</li>
+<li>Relu: $f(x) = x * \mathbb{1}_{x\geq 0}$, $\partial f(x) = \mathbb{1}_{x\geq 0}$，导数取值要不$1$要不$0$，且在$x=0$不可导</li>
+<li>leaky Relu: $g(x) = x \text{ if } x \geq \lambda \text{ else } \lambda x$, $\partial g(x) = 1 \text{ if } x \geq \lambda \text{ else } \lambda$，为了解决<code>Relu</code>函数在$x &lt; 0$梯度始终是$0$而设计的</li>
+</ul>
+<blockquote>
+<p>相关见<a href="https://zhuanlan.zhihu.com/p/31742800">这里</a></p>
+</blockquote>
+</li>
+<li>梯度消失与梯度膨胀，以及解决措施
+<ul>
+<li><del>根据链式法则，如果每一层神经元对上一层输出的偏导乘上权重结果都小于$1$，则经过多层传播后，误差对输入层的偏导会趋于$0$，这就是梯度消失，相反，如果每层都大于$1$，则误差对输入层的偏导趋于无穷大，这就是梯度爆炸</del></li>
+<li>当梯度很大，会出现函数值跳来跳去的情况，一种解决办法是调整学习率，另一种办法叫做<code>Gradient Clipping</code>梯度裁剪，如果梯度的$l_2$范数$\| g \|_2 $大于阈值$c$，则把梯度缩小$\frac{c}{\| g \|_2}$倍，另一种防止梯度过大的方法是在损失函数中加入<code>regularization</code>限制权值的范数</li>
+<li>另外<code>batchnorm</code>也被用于解决梯度问题，正向传播中的$f_2 = f_1 (w^Tx + b)$在反向传播中$\partial f_2 / \partial w = (\partial f_2 / \partial f_1)\cdot x$因此这一层的输入会影响梯度的消失和爆炸。<code>batchnorm</code>通过对每一层输出规范为均值和方差一致的办法，消除了下一层输入带来的放缩影响</li>
+<li>何凯明大神提出的残差网络结构，用堆叠的神经网络去拟合一个<code>residual mapping</code> $F(x) = H(x) - x$ 这样如果残差网络梯度消失，至少<code>identity mapping</code>能保证无损地传播梯度
+<br>
+<div class="book-columns" style="flex-wrap: wrap; display: flex;">
+  
+  	<div style="flex: 1 1;">
+  		<img src="resnet.png" style="height:auto">
+  	</div>
+  
+  	<div style="flex: 1 1;">
+  		$$\begin{align*}
+\frac{\partial \text{loss}}{\partial x_l} &amp;= \frac{\partial \text{loss}}{\partial x_L}\cdot \frac{\partial X_L}{\partial x_l} \cr
+&amp;= \frac{\partial \text{loss}}{\partial x_L}\cdot \left(1 + \frac{\partial}{\partial x_L}\sum_{i=l}^{L-1}F(x_i, W_i)\right)
+\end{align*}$$
+第一个因子$\partial \text{loss} / \partial x_L$代表损失函数到达$L$的梯度，然后$l \rightarrow L-1$都是<code>residual net</code>
+  	</div>
+  
+</div></li>
+</ul>
+</li>
+<li>GRU/LSTM 见下面</li>
+</ul>
+<h2 id="rnn">RNN</h2>
+<ul>
+<li>简述RNN，LSTM，GRU的区别和联系
+<ul>
+<li><code>RNN</code>的输入不是独立的（比如一条语句被视为RNN的一个输入样本，彼此之间有情境关联）
+
+
+
+
+
+<figure role="group">
+    <a href=" rnn.png" class="img-link">
+        <img src="rnn.png" width=100% title="$\mathbf{x}$是第一层的输入，隐藏状态$s_t = \tanh(Ux_t &#43; W_{s_{t-1}})$由前后两个输入共同决定，$o_t = Vs_t$是第二层的输入。$U, V, W$是RNN第一层的参数 " >
+    </a>
+</figure></li>
+</ul>
+</li>
+</ul>
+    </div>
+    <footer class="post-footer">
+     
+
+     <div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    
+  </div>
+
+  <div class="post-nav-prev post-nav-item">
+      
+  </div>
+</div>
+
+
+       
+  <span id="/2020/08/20_08_04-interview/" class="leancloud_visitors" data-flag-title="深度学习">
+    <span class="post-meta-item-text">Number of Visits</span>
+    <span class="leancloud-visitors-count">1000000</span>
+    <p></p>
+  </span>
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'I3JzxT3QPBDlpXaWqzbeBz1n-MdYXbMMI',
+        appKey: 'toiePHbd482Fx1HM3LdvMthg',
+        notify:  false , 
+        verify:  false , 
+        avatar:'mp', 
+        placeholder: 'comment here',
+        visitor:  true ,
+        lang: "en",
+    });
+  </script>
+    </footer>
+  </article>
+</section>
+
+          </div>
+        </div>
+        <div class="sidebar-toggle">
+  <div class="sidebar-toggle-line-wrap">
+    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+  </div>
+</div>
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
+
+    <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+        src="/img/icon.svg"
+        alt="" />
+    <p class="site-author-name" itemprop="name"></p>
+    <p class="site-description motion-element" itemprop="description"> 
+        Finance &amp; Reinforcement Learning</p>
+</div>
+      <nav class="site-state motion-element">
+    <div class="site-state-item site-state-posts">
+      <a href="/post/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">Blogs</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">    
+        <a href="/categories/">      
+         
+        <span class="site-state-item-count">3</span>
+        
+        <span class="site-state-item-name">Categories</span>
+        
+        </a>
+    </div>
+
+    <div class="site-state-item site-state-tags">
+        <a href="/tags/">
+         
+        <span class="site-state-item-count">11</span>
+        
+        <span class="site-state-item-name">Tags</span>
+        </a>
+    </div>
+</nav>
+      
+      
+<div class="links-of-author motion-element">
+    
+        <span class="links-of-author-item">
+        <a href="https://github.com/dennislblog/" target="_blank" title="GitHub">
+            <i class="fa fa-fw fa-github"></i>
+            GitHub
+        </a>
+        </span>
+    
+        <span class="links-of-author-item">
+        <a href="mailto:dennisl@udel.edu" target="_blank" title="Email">
+            <i class="fa fa-fw fa-envelope"></i>
+            Email
+        </a>
+        </span>
+    
+</div>
+
+
+      
+      
+    </section>
+    
+  </div>
+</aside>
+
+      </div>
+    </main>
+   
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  <span itemprop="copyrightYear">  &copy; 
+  2020 - 2020</span>
+  <span class="with-love"><i class="fa fa-heart"></i></span>
+  <span class="author" itemprop="copyrightHolder">My Site Title</span>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+      <span id="scrollpercent"><span>0</span>%</span>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+<script type="text/javascript" src="/js/vendor/jquery/index.js?v=2.1.3"></script>
+<script type="text/javascript" src="/js/vendor/fastclick/lib/fastclick.min.js?v=1.0.6"></script> 
+<script type="text/javascript" src="/js/vendor/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+<script type="text/javascript" src="/js/vendor/velocity/velocity.min.js?v=1.2.1"></script>
+<script type="text/javascript" src="/js/vendor/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+<script type="text/javascript" src="/js/utils.js"></script>
+<script type="text/javascript" src="/js/motion.js"></script>
+<script type="text/javascript" src="/js/affix.js"></script>
+<script type="text/javascript" src="/js/schemes/pisces.js"></script>
+
+<script type="text/javascript" src="/js/scrollspy.js"></script>
+<script type="text/javascript" src="/js/post-details.js"></script>
+<script type="text/javascript" src="/js/toc.js"></script>
+<script type="text/javascript" src="/js/expand.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="/js/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { 
+    preferredFont: "TeX", 
+    availableFonts: ["STIX","TeX"], 
+    scale: 90,
+    styles: {".MathJax": {color: "rgb(91, 58, 17)"}} 
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
+</body>
+</html>

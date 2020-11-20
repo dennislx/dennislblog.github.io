@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>finance on My Site Title</title>
+    <link>https://dennislblog.github.io/tags/finance/</link>
+    <description>Recent content in finance on My Site Title</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dennislblog.github.io/tags/finance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Review of Competing Market Makers</title>
+      <link>https://dennislblog.github.io/2020/06/20_06_30-imperfect-competition/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennislblog.github.io/2020/06/20_06_30-imperfect-competition/</guid>
+      <description>&lt;p&gt;To better understand market player&amp;rsquo;s equilibrium responses in a perfect competitive marketplace, we take our look at how the imperfect competition among finite many market makers drives the dynamics of price discovery. In this post, I will review two papers: one that investigates price competition among $M$ market makers (Bondarenko, 2001) and another where $M$ liquidity providers submit their demand price schedule (i.e., quantities) based on a common clearing price (Nishide, 2006). Through reviewing these works, I hope to gain insight on how imperfect competition among market makers (or liquidity providers) affects the price formation and price discovery during the trading periods.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Review of Market Microstructure Studies</title>
+      <link>https://dennislblog.github.io/2020/06/20_06_29-model-review/</link>
+      <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennislblog.github.io/2020/06/20_06_29-model-review/</guid>
+      <description>&lt;p&gt;Although market microstructure models have been proposed for over thirty years, only a few studies on how market makers and informed traders interact to form a competitive price (Cho, 2004). In this blog, I will review several market microstructure models with detailed analysis.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
